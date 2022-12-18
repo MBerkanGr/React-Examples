@@ -47,12 +47,12 @@ const users = [
 // console.log(filtered);
 
 
-//Some  True - False 
+//Some  True - False (En az 1 tane elemanın koşula uymasısnı bekler)
 // const some = users.some((item) => item.age === 11 );
 // console.log(some);
 
 
-//Every  True - False 
+//Every  True - False (Bütün elemanların koşula uymasını bekler)
 // const every = users.every((item) => item.age > 20);
 // console.log(every);
 
