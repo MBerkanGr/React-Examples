@@ -1,4 +1,5 @@
 import './App.css';
+import User from "./components/User";
 //import Header from './components/Header'
 
 // function App() {
@@ -22,23 +23,59 @@ import './App.css';
 //   )
 // }
 
-const name = "Mehmet Berkan"
-const surname = "Gorel"
-const isLoggedIn = true;
+// const name = "Mehmet Berkan"
+// const surname = "Gorel"
+// const isLoggedIn = true;
+
+// function App() {
+//   return (
+//     <>
+//       <h1>{isLoggedIn && `Name : ${name}, Surname : ${surname}`}
+//       {!isLoggedIn && "You cant login"}
+//       </h1>
+//       <h1>
+//         {isLoggedIn
+//           ? `Name : ${name}, Surname : ${surname}`
+//           : "You cant login"}
+//       </h1>
+//     </>
+//   );
+// }
+
+// export default App;
+
+const friends = [
+  {
+    id : 1,
+    name : "Mehmet"
+  },
+  {
+    id : 2,
+    name : "Berkan"
+  },
+  {
+    id : 3,
+    name : "Ali"
+  }
+]
 
 function App() {
   return (
     <>
-      <h1>{isLoggedIn && `Name : ${name}, Surname : ${surname}`}
-      {!isLoggedIn && "You cant login"}
-      </h1>
-      <h1>
-        {isLoggedIn
-          ? `Name : ${name}, Surname : ${surname}`
-          : "You cant login"}
-      </h1>
+      <User 
+        name="Mehmet Berkan" 
+        surname="Gorel"
+        age= {22} 
+        isLoggedIn={true} 
+        friends= {friends}
+        address={{
+          title :"Kagithane / Istanbul",
+          zip : 34000
+        }
+        }
+        />
     </>
-  );
+  )
 }
 
 export default App;
